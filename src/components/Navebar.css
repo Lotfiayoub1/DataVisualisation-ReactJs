@@ -1,0 +1,18 @@
+.Navebar {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(235, 226, 243);
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 2px 1px 10px rgb(190, 190, 190);
+}
+.Navebar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  list-style-type: none;
+}

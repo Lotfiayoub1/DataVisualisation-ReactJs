@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navebar from "./components/Navebar";
 
+import Chart from "./components/Chart";
+import Sidebar from "./components/Sidebar";
+import LineChart from "./components/LineChart";
+import Cercle from "./components/Cercle";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navebar />
+      {/* i have to add a sidebar  */}
+      <div className="BarChart">
+        <Sidebar />
+
+        <Chart />
+        <Cercle />
+      </div>
+      <div className="line">
+        <Sidebar />
+        <LineChart />
+      </div>
     </div>
   );
 }
